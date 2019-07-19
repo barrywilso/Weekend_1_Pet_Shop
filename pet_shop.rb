@@ -6,8 +6,14 @@ def total_cash(sum)
   return sum[:admin][:total_cash]
 end
 
-def add_or_remove_cash(sum)
+def add_or_remove_cash(cash, amount)
+  cash[:admin][:total_cash] += amount
+end
 
-  
-  return sum[:admin][:total_cash]
+def add_or_remove_remove(cash, amount)
+  cash[:admin][:total_cash] -= amount
+end
+
+def pets_sold(sold)
+  return sold[:admin][:pets_sold]
 end
