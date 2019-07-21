@@ -86,3 +86,14 @@ end
 def remove_customer_cash (customer, amount)
   customer[:cash] -= amount
 end
+
+def customer_pet_count (customer)
+  pets = customer[:pets]
+  return pets.count
+end
+
+def add_pet_to_customer (customer, pet)
+ pets = customer[:pets].push(pet)
+ return pets.count
+
+end
