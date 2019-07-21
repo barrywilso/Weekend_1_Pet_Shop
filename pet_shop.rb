@@ -52,20 +52,37 @@ def find_pet_by_name(petshop, name)
     if (pet[:name] != name)
 
     return nil
-
     end
   end
 end
 
 
-
-
-
-
 # def remove_pet_by_name(petshop, name)
-#   for pet in petshop[:pets]
-#     if (pet[:name] == name) then pet.delete
-# end
-# end
 #
+#   for pet in petshop[:pets]
+#     if (pet[:name] == name)
+#       pet.delete
+#
+#     end
+#   end
 # end
+# not complete
+
+# def add_pet_to_stock
+##   for pet in petshop[:pets]
+#     if (pet[:name] == name)
+#       pet.delete
+#
+#     end
+#   end
+# end
+# not complete
+
+def customer_cash (customer)
+  cash = customer[:cash]
+return cash
+end
+
+def remove_customer_cash (customer, amount)
+  customer[:cash] -= amount
+end
