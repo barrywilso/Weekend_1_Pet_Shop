@@ -142,11 +142,11 @@ class TestPetShop < Minitest::Test
   #   assert_nil(pet)
   # end
 
-  def test_remove_pet_by_name
-    remove_pet_by_name(@pet_shop, "Arthur")
-    pet = find_pet_by_name(@pet_shop,"Arthur")
-    assert_nil(pet)
-  end
+  # def test_remove_pet_by_name
+  #   remove_pet_by_name(@pet_shop, "Arthur")
+  #   pet = find_pet_by_name(@pet_shop,"Arthur")
+  #   assert_nil(pet)
+  # end
 
 
   # def test_add_pet_to_stock
@@ -185,11 +185,11 @@ class TestPetShop < Minitest::Test
   #   assert_equal(true, can_buy_pet)
   # end
 
-  # def test_customer_can_afford_pet__insufficient_funds
-  #   customer = @customers[1]
-  #   can_buy_pet = customer_can_afford_pet(customer, @new_pet)
-  #   assert_equal(false, can_buy_pet)
-  # end
+  def test_customer_can_afford_pet__insufficient_funds
+    customer = @customers[1]
+    can_buy_pet = customer_can_afford_pet(customer, @new_pet)
+    assert_equal(false, can_buy_pet)
+  end
 
   # def test_customer_can_afford_pet__exact_funds
   #   customer = @customers[2]

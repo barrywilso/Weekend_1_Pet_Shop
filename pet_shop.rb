@@ -93,3 +93,9 @@ def add_pet_to_customer (customer, pet)
  return pets.count
 
 end
+
+def customer_can_afford_pet (customer, pet)
+  if (customer[:cash] >= pet[:price])
+    return true
+  end
+end
