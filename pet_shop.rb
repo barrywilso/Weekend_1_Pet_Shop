@@ -68,15 +68,10 @@ end
 # end
 # not complete
 
-# def add_pet_to_stock
-##   for pet in petshop[:pets]
-#     if (pet[:name] == name)
-#       pet.delete
-#
-#     end
-#   end
-# end
-# not complete
+def add_pet_to_stock(petshop, pet)
+  petshop[:pets].push(pet)
+end
+
 
 def customer_cash (customer)
   cash = customer[:cash]
