@@ -35,7 +35,6 @@ def pets_by_breed(petshop, breed)
   return matchingbreeds
 end
 
-
 def find_pet_by_name(petshop, name)
 
   for pet in petshop[:pets]
@@ -56,7 +55,6 @@ def find_pet_by_name(petshop, name)
   end
 end
 
-
 def remove_pet_by_name(petshop, name)
 
   for pet in petshop[:pets]
@@ -68,11 +66,9 @@ def remove_pet_by_name(petshop, name)
   end
 end
 
-
 def add_pet_to_stock(petshop, pet)
   petshop[:pets].push(pet)
 end
-
 
 def customer_cash (customer)
   cash = customer[:cash]
@@ -97,5 +93,11 @@ end
 def customer_can_afford_pet (customer, pet)
   if (customer[:cash] >= pet[:price])
     return true
+  end
+end
+
+def customer_can_afford_pet (customer, pet)
+  if (customer[:cash] < pet[:price])
+    return false
   end
 end
