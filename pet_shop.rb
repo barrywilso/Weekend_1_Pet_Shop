@@ -33,5 +33,14 @@ def pets_by_breed(petshop, breed)
     matchingbreeds.push(pet) if (pet[:breed] == breed)
   end
   return matchingbreeds
+end
 
+
+def find_pet_by_name(petshop, name)
+
+  for pet in petshop[:pets]
+    if (pet[:name] == name)
+      return pet
+    end
+  end
 end
